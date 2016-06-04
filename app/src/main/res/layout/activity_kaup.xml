@@ -31,4 +31,12 @@
         android:text="테스트"
         android:id="@+id/btnCal"
         android:onClick="Cal" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인으로 가기"
+        android:id="@+id/btnMain1"
+        android:background="#7abbcf"
+        android:layout_marginTop="10dp"
+        />
 </LinearLayout>
