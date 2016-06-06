@@ -13,7 +13,6 @@ import om.hanbit.user.mytest.R;
 import om.hanbit.user.mytest.main.MainActivity;
 
 public class CalcActivity extends Activity implements View.OnClickListener,View.OnFocusChangeListener {
-
     EditText input01,input02,input03;
     TextView textResult;
     int num1,num2,result;
@@ -22,8 +21,6 @@ public class CalcActivity extends Activity implements View.OnClickListener,View.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc);
-
-
         textResult = (TextView) findViewById(R.id.textResult);
 
         input01=(EditText)findViewById(R.id.input01);
@@ -42,11 +39,11 @@ public class CalcActivity extends Activity implements View.OnClickListener,View.
     public void onClick(View v) {
         Toast tMsg =Toast.makeText(CalcActivity.this,"토스트 연습",Toast.LENGTH_LONG);
 
-       if(  input01.getText().toString().equals("")) input01.setText("0");
+        if(  input01.getText().toString().equals("")) input01.setText("0");
 
-       num1=Integer.parseInt(input01.getText().toString());
-       num2=Integer.parseInt(input02.getText().toString());
-   //     if( Pattern.
+        num1=Integer.parseInt(input01.getText().toString());
+        num2=Integer.parseInt(input02.getText().toString());
+        //     if( Pattern.
         service = new CalcServiceImpl();
 
         if(v.getId()==R.id.btnMain2) {
