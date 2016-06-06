@@ -12,7 +12,8 @@
             android:layout_height="wrap_content"
             android:text="성명"
             android:textStyle="bold"
-            android:textSize="17dp"/>
+            android:textSize="17dp"
+            android:id="@+id/tvName"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
