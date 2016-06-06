@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:gravity="center"
 
-    android:background="#00FF00"
+    android:background="#3F51B5"
     android:layout_marginBottom="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -13,13 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:layout_gravity="center_horizontal">
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="성명 : "
             android:textStyle="bold"
             android:textSize="17dp"
+            android:textColor="#FFFFFF"
             android:id="@+id/tvName"/>
         <EditText
             android:layout_width="wrap_content"
@@ -33,26 +36,62 @@
             android:background="#ffffff" />
 
     </LinearLayout>
-
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몸무게 : "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvWeight"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etWeight"
-        android:text="30"
+        android:text=""
+        android:hint="몸무게를 넣으세요!"
         android:inputType="text"
         android:textIsSelectable="false"
         android:background="#FFFFFF" />
+      </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="키 : "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvHeight"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etHeight"
-        android:text="30"
-        android:inputType="text"/>
+        android:text=""
+        android:hint="키를 넣으세요!"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/resultCalc"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
