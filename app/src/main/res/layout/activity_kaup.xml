@@ -86,12 +86,23 @@
         android:ems="10"
         android:inputType="numberDecimal"/>
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 상태는"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
         android:id="@+id/resultCalc"
         />
-
+</LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
