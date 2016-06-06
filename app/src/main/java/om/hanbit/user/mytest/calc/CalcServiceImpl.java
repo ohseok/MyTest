@@ -1,7 +1,11 @@
+package om.hanbit.user.mytest.Calc;
 
-package om.hanbit.user.mytest.calc;
-
+/**
+ * Created by user on 2016-06-04.
+ */
 public class CalcServiceImpl implements CalcService {
+
+
     @Override
     public int plus(int num1, int num2) {
         return num1+num2;

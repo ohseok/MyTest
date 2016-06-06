@@ -1,10 +1,10 @@
-package om.hanbit.user.mytest.calc;
+package om.hanbit.user.mytest.Calc;
 
 /**
- * Created by USER on 2016-06-04.
+ * Created by user on 2016-06-04.
  */
 public interface CalcService {
-    public int plus(int num1,int num2);
+    public  int  plus(int num1,int num2);
     public int minus(int num1,int num2);
     public int multi(int num1,int num2);
     public int divide(int num1,int num2); // 몫
