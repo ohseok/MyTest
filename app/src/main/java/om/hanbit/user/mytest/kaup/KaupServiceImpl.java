@@ -8,8 +8,8 @@ public class KaupServiceImpl implements KaupService{
 
     @Override
     public String getKaup(double weight, double height) {
-        int idx = (int)(weight/(height * height)) * 10000;
-        String result="";
+        int idx = (int)((weight/(height * height)) * 10000);
+        String result= "";
 
         if(idx >= 30){ //비만
             result = "비만";

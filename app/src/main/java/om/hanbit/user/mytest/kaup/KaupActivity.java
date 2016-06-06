@@ -19,6 +19,7 @@ public class KaupActivity extends Activity implements  View.OnClickListener{
     String name,result;
     double weight,height;
     Button btnCal;
+    KaupService service;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,14 +33,15 @@ public class KaupActivity extends Activity implements  View.OnClickListener{
     @Override
     public void onClick(View v) {
         Toast tMsg =Toast.makeText(KaupActivity.this,"토스트 연스",Toast.LENGTH_LONG);
-
+        service= new KaupServiceImpl();
         switch (v.getId()) {
             case  R.id.btnCal :
             name = etName.getText().toString();
             weight = Double.parseDouble(etWeight.getText().toString());
             height = Double.parseDouble(etHeight.getText().toString());
+            result= service.getKaup(weight,height);
             resultCalc = (TextView) findViewById(R.id.resultCalc);
-            //  test = Integer.parseInt(etHeight.getText().toString());
+                resultCalc.setText(result);
             Log.d(result, "카우프지수");
             break;
             case  R.id.btnMain1:

@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import om.hanbit.user.mytest.Login.LoginActivity;
 import om.hanbit.user.mytest.R;
-import om.hanbit.user.mytest.calc.CalcActivity;
+import om.hanbit.user.mytest.Calc.CalcActivity;
 import om.hanbit.user.mytest.kaup.KaupActivity;
 
 
