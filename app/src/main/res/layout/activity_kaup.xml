@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/etWeight"
         android:text=""
-        android:hint="몸무게를 넣으세요!"
+        android:hint="몸무게를  넣으세요!"
         android:inputType="text"
         android:textIsSelectable="false"
         android:background="#FFFFFF" />
